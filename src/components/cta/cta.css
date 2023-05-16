@@ -1,0 +1,96 @@
+.cta {
+    display: flex;
+    justify-content: space-between; /*To move the button on the right side, putting space between children*/
+    align-items: center; /*To vertically align them with respect to border*/
+    flex-direction: row;
+
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    color: #fff;
+}
+
+.cta-content p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    font-weight: bold;
+}
+
+.cta-content h3 {
+    font-family: var(--font-family);
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 800;
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.cta-btn button {
+    background-color: #FF4820;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.cta-btn button:hover{
+    color: var(--color-bg);
+    background-color: #fff;
+}
+
+
+@media(max-width: 650px) {
+    .cta {
+        flex-direction: column; /*here button will appear below text*/
+    }
+
+    .cta-btn {
+        margin: 2rem 0 0;
+    }
+}
+
+@media(max-width: 550px) {
+    .cta {
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+
+    .cta-content h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .cta-btn button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
